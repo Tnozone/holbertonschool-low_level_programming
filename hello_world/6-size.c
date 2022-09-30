@@ -6,6 +6,10 @@
  */
 int main(void)
 {
+int intType;
+float floatType;
+double doubleType;
+char charType;
 printf("%z bytes \n"), sizeof(intType);
 printf("%z bytes \n"), sizeof(doubleType);
 printf("%z bytes \n"), sizeof(flaotType);
