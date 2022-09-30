@@ -10,9 +10,9 @@ int intType;
 float floatType;
 double doubleType;
 char charType;
-printf("%z bytes \n"), sizeof(intType);
-printf("%z bytes \n"), sizeof(doubleType);
-printf("%z bytes \n"), sizeof(flaotType);
-printf("%z bytes \n"), sizeof(charType);
+printf("int size: %z bytes \n"), sizeof(intType);
+printf("double size: %z bytes \n"), sizeof(doubleType);
+printf("float size: %z bytes \n"), sizeof(floatType);
+printf("char size: %z bytes \n"), sizeof(charType);
 return (0);
 }
