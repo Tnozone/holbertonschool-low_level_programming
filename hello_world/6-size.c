@@ -8,11 +8,13 @@ int main(void)
 {
 int intType;
 float floatType;
-double doubleType;
+longint longintType;
+longlongint longlongintType;
 char charType;
-printf("int size: %z bytes \n"), sizeof(intType);
-printf("double size: %z bytes \n"), sizeof(doubleType);
-printf("float size: %z bytes \n"), sizeof(floatType);
-printf("char size: %z bytes \n"), sizeof(charType);
+printf("Size of a char: %z bytes \n"), sizeof(charType);
+printf("Size of an int: %z bytes \n"), sizeof(intType);
+printf("Size of a long int: %z bytes \n"), sizeof(longintType);
+printf("Size of a long long int: %z bytes \n"), sizeof(longlongintType);
+printf("Size of a float: %z bytes \n"), sizeof(floatType);
 return (0);
 }
