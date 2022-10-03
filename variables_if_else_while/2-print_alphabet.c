@@ -10,7 +10,7 @@ char al;
 
 for (al = 'a'; al <= 'z'; al++)
 {
-putchar(al);
+putchar(al\n);
 }
 return (0);
 }
