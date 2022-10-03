@@ -10,7 +10,7 @@ int dig;
 
 for (dig = '0'; dig <= '9'; dig++)
 {
-printf("%i", dig);
+printf("%d", dig);
 }
 putchar('\n');
 return (0);
