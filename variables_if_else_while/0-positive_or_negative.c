@@ -3,7 +3,7 @@
 #include <stdio.h>
 /**
  * main - Entry point
- * description - if integer positive prints, else if negative, prints, else, is zero
+ * description - if else integer positive, negative, or zero, prints
  * Return: Always 0 (Success)
  */
 int main(void)
@@ -14,15 +14,15 @@ srand(time(0));
 n = rand() - RAND_MAX / 2;
 if (n > 0)
 {
-printf("is positive\n");
+printf("%i is positive\n");
 }
 else if (n < 0)
 {
-printf("is negative\n");
+printf("%i is negative\n");
 }
 else
 {
-printf("is zero\n");
+printf("%i is zero\n");
 }
 return (0);
 }
