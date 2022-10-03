@@ -14,7 +14,7 @@ if (al == 'd')
 {
 continue;
 }
-if (al == 'd')
+if (al == 'q')
 {
 continue;
 }
@@ -22,3 +22,4 @@ putchar(al);
 }
 putchar('\n');
 return (0);
+}
