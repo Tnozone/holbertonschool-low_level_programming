@@ -6,7 +6,7 @@
  */
 int main(void)
 {
-int dig = 0x;
+int dig;
 
 for (dig = 0; dig <= '9'; dig++)
 {
