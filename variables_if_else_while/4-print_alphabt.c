@@ -10,7 +10,11 @@ char al;
 
 for (al = 'a'; al <= 'z'; al++)
 {
-if (al == 'd'; al == 'q')
+if (al == 'd')
+{
+continue;
+}
+if (al == 'd')
 {
 continue;
 }
