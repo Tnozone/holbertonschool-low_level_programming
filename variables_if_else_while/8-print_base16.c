@@ -6,10 +6,16 @@
  */
 int main(void)
 {
-	int dig = 0x;
+int dig = 0x;
 
-	for (dig = 0; dig <= 'f'; dig++)
-	putchar(%x dig + '0');
-	putchar('\n');
-	return (0);
+for (dig = 0; dig <= '9'; dig++)
+{
+putchar(dig + '0');
+}
+for (dig = 'a'; dig <= 'f'; dig++)
+{
+putchar(dig);
+}
+putchar('\n');
+return (0);
 }
