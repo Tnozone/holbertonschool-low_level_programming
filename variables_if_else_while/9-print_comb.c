@@ -11,6 +11,10 @@ int dig;
 for (dig = 0; dig <= 9; dig++)
 {
 putchar(dig % 10 + '0');
+if (dig == 9)
+{
+break;
+}
 putchar(',');
 putchar(' ');
 }
