@@ -8,14 +8,11 @@ int main(void)
 {
 int dig;
 
-for (dig = 0; dig <= 9; dig++)
-{
-putchar(dig % 10 + '0');
-for (dig = 0; dig <= 9; dig++)
+for (dig = 0; dig <= 99; dig++)
 {
 putchar(dig % 10 + '0');
 putchar(',');
-}
+putchar(' ');
 }
 putchar('\n');
 return (0);
