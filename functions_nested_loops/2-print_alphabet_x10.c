@@ -13,8 +13,9 @@ for (alph = 'a'; alph <= 'z'; alph++)
 {
 while (1 < 10)
 {
-_puchar(alph);
+_putchar(alph);
 i++;
 }
 }
+_putchar('\n');
 }
