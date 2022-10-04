@@ -1,4 +1,5 @@
-#include <stdio.h>
+#include<stdio.h>
+#include<main.h>
 /**
  * main - Entry point
  * description - print _putchar
@@ -7,6 +8,6 @@
 
 int main(void)
 {
-putchar("\_putchar\n");
+putchar("_putchar\n");
 return (0);
 }
