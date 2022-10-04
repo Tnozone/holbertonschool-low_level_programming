@@ -2,6 +2,7 @@
 /**
  * _isalpha - Entry point
  * description - checks if alphabet
+ * c - int
  * Return: Always 0 (Success)
  */
 
