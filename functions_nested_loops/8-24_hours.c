@@ -14,7 +14,9 @@ while (h < 24)
 {
 while (m < 60)
 {
-_putchar(h, ':', m);
+_putchar(h);
+_putchar(':');
+_putchar(m);
 m++;
 }
 h++;
