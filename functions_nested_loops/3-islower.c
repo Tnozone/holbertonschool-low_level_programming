@@ -2,6 +2,7 @@
 /**
  * _islower - Entry point
  * description - checks if lowercase
+ * c - int
  * Return: Always 0 (Success)
  */
 
