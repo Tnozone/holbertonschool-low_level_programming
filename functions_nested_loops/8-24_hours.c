@@ -1,6 +1,6 @@
 #include"main.h"
 /**
- * _islower - Entry point
+ * jack_bauer - Entry point
  * description - prints minutes of a day
  * Return: Always 0 (Success)
  */
@@ -17,6 +17,7 @@ while (m < 60)
 _putchar(h);
 _putchar(':');
 _putchar(m);
+_putchar(\n);
 m++;
 }
 h++;
