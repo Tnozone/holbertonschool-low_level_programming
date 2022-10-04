@@ -2,7 +2,7 @@
 /**
  * _islower - Entry point
  * description - checks if lowercase
- * @c:
+ * @c: integer for alphabet
  * Return: Always 0 (Success)
  */
 
