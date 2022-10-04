@@ -2,6 +2,7 @@
 /**
  * _abs - Entry point
  * description - checks if lowercase
+ * @n: integer positive or negative
  * Return: Always 0 (Success)
  */
 
