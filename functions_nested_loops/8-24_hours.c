@@ -17,7 +17,7 @@ while (m < 60)
 _putchar(h);
 _putchar(':');
 _putchar(m);
-_putchar(\n);
+_putchar('\n');
 m++;
 }
 h++;
