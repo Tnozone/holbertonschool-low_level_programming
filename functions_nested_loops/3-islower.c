@@ -1,14 +1,14 @@
 #include"main.h"
 /**
  * _islower - Entry point
- * description - print alphabet
+ * description - checks if lowercase
  * Return: Always 0 (Success)
  */
 
 int _islower(int c)
 {
 
- _puchar(c);
+_putchar(c);
 if (c >= 'a' && c <= 'z')
 {
 return (1);
