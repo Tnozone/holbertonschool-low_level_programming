@@ -13,7 +13,7 @@ int z = x * y;
 
 while (x < 10)
 {
-while (y = 0 ; y <= 9)
+while (y = 0; y <= 9)
 {
 _putchar(z + '0');
 if (y == 9)
@@ -24,7 +24,7 @@ _putchar(',');
 _putchar(' ');
 y++;
 }
-_putchar('\n')
+_putchar('\n');
 x++;
 }
 }
