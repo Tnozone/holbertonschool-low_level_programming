@@ -1,6 +1,6 @@
 #include"main.h"
 /**
- * main - Entry point
+ * print_alphabet_x10 - Entry point
  * description - print alphabet
  * Return: Always 0 (Success)
  */
@@ -17,5 +17,4 @@ _puchar(alph);
 i++;
 }
 }
-Return (0);
 }
