@@ -2,7 +2,7 @@
 /**
  * print_sign - Entry point
  * description - checks if number
- * @n - int
+ * @n: integer positive or negative
  * Return: Always 0 (Success)
  */
 
