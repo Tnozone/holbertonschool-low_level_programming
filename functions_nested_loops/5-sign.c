@@ -2,6 +2,7 @@
 /**
  * print_sign - Entry point
  * description - checks if number
+ * n - int
  * Return: Always 0 (Success)
  */
 
