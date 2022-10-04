@@ -10,13 +10,13 @@ void jack_bauer(void)
 int h = 0;
 int m = 0;
 
-if (h < "24")
+while (h < 24)
 {
-while (m < "60")
+while (m < 60)
 {
-_putchar(h);
+_putchar(h + '0');
 _putchar(':');
-_putchar(m);
+_putchar(m + '0');
 _putchar('\n');
 m++;
 }
