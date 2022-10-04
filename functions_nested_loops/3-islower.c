@@ -7,7 +7,6 @@
 
 int _islower(int c)
 {
-char c;
 
  _puchar(c);
 if (c >= 'a' && c <= 'z')
