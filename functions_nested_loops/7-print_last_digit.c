@@ -2,23 +2,21 @@
 /**
  * print_last_digit - Entry point
  * description - print last digit
- * @n: integer with digits
+ * @n1: integer with digits
  * Return: Always 0 (Success)
  */
 
-int print_last_digit(int n)
+int print_last_digit(int n1)
 {
-if (n > 0)
+int n;
+if (n1 > 0)
 {
-n = n % 10;
-_putchar(n + '0');
-return (n);
+n = n1 % 10;
 }
 else
 {
-n = (-1) * n;
-n = n % 10;
-_putchar(n + '0');
-return (n);
+n = (-1) * (n1 % 10);
 }
+_putchar((n % 10) + '0');
+return (n % 10);
 }
