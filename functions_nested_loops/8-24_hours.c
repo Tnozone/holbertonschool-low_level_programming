@@ -14,10 +14,10 @@ for (h1 = 0; h1 <= 24; h1++)
 for (m1 = 0; m1 < 60; m1++)
 {
 _putchar((h1 / 10) + '0');
-_putchar((h1 % 10) '0');
+_putchar((h1 % 10) + '0');
 _putchar(':');
 _putchar((m1 / 10) + '0');
-_putchar((m1 % 10) '0');
+_putchar((m1 % 10) + '0');
 _putchar('\n');
 }
 }
