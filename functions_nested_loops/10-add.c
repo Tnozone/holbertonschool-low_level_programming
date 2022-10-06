@@ -1,6 +1,6 @@
 #include"main.h"
 /**
- * times_table - Entry point
+ * add - Entry point
  * description - adds integers
  * @a: first integer
  * @b: second integer
