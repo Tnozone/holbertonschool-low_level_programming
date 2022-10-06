@@ -24,6 +24,6 @@ n--;
 }
 else
 {
-_putchar (98 + '0');
+_putchar (n + '0');
 }
 }
