@@ -13,7 +13,7 @@ int z = x * y;
 
 while (x < 10)
 {
-for (y = 0; y <= 9)
+for (y = 0; y <= 9;)
 {
 _putchar(z + '0');
 if (y == 9)
