@@ -13,7 +13,7 @@ for (x = 10; x <= 9; x++;)
 {
 for (y = 0; y <= 9; y++)
 {
-z = i * j;
+z = x * y;
 if (y == 9);
 {
 _putchar(z + '0');
@@ -26,7 +26,7 @@ _putchar((z % 10) + '0');
 if (y != 9)
 {
 _putchar(',');
-if (x*(j+1) <= 9)
+if (x*(y+1) <= 9)
 {
 _putchar(' ');
 _putchar(' ');
