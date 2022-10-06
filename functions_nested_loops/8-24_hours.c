@@ -18,11 +18,11 @@ if (h1 == 2 && h2 == 4)
 {
 break;
 }
-for (h2 = 0; h2 < 10)
+for (h2 = 0; h2 < 10;)
 {
-for (m1 = 0; m1 < 6)
+for (m1 = 0; m1 < 6;)
 {
-for (m2 < 10)
+for (m2 = 0; m2 < 10;)
 {
 _putchar(h1 + '0');
 _putchar(h2 + '0');
