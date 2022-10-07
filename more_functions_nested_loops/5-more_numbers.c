@@ -14,13 +14,13 @@ while (a < 10)
 {
 for (n = 0; n <= 14; n++)
 {
-if (n > 10)
+if (n > 9)
 {
 _putchar((n / 10) + '0');
 goto jump;
 }
 else
-jump:
+jump :
 {
 _putchar((n % 10) + '0');
 }
