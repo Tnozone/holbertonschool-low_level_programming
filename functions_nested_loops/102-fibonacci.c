@@ -7,7 +7,7 @@
 
 int main(void)
 {
-  int i, n;
+  int i;
   int t1 = 1, t2 = 2;
   int next = t1 + t2;
 
