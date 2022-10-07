@@ -1,11 +1,11 @@
 #include"main.h"
 /**
- * print_numbers - Entry point
+ * print_most_numbers - Entry point
  * description - prints numbers 1 - 9 except 2 and 4
  * Return: Always 0 (Success)
  */
 
-void print_numbers(void)
+void print_most_numbers(void)
 {
 int n;
 
