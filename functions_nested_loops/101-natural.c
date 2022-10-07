@@ -7,7 +7,7 @@
 
 int main(void)
 {
-int sum3 = 0, sum5 = 0, sum 15 = 0;
+int sum3 = 0, sum5 = 0, sum15 = 0;
 int i;
 
 for (i = 0; i < 1024; i++)
