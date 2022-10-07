@@ -1,13 +1,13 @@
 #include<stdio.h>
 #include"main.h"
 /**
- * main - Entry point
+ * buzz - Entry point
  * @n: integer
  * description - prints 1 - 100, and buzzes on multiples
  * Return: Always 0 (Success)
  */
 
-void main(int n)
+void buzz(int n)
 {
 
 for (n = 0; n <= 100; n++)
