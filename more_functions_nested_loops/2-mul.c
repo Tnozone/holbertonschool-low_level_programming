@@ -4,10 +4,10 @@
  * description - multiplies integers
  * @a: first integer
  * @b: second integer
- * Return: a + b
+ * Return: a * b
  */
 
-int add(int a, int b)
+int mul(int a, int b)
 {
   return (a * b);
 }
