@@ -26,5 +26,5 @@ sum15 += i;
 }
 }
 printf("%d\n", sum3 + sum5 - sum15);
-return (0)
+return (0);
 }
