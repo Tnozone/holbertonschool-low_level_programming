@@ -12,7 +12,7 @@ int l;
 
 if (n > 0)
 {
-for (; l < n; l++)
+for (l = 0; l < n; l++)
 {
 _putchar('_');
 }
