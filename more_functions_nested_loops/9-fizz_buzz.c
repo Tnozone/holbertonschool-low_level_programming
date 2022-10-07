@@ -2,13 +2,13 @@
 #include"main.h"
 /**
  * main - Entry point
+ * @n: integer
  * description - prints 1 - 100, and buzzes on multiples
  * Return: Always 0 (Success)
  */
 
-void main(void)
+void main(int n)
 {
-int n;
 
 for (n = 0; n <= 100; n++)
 {
@@ -25,7 +25,8 @@ else if ((n % 3 == 0) && (n % 5 == 0))
 printf("FizzBuzz ");
 }
 else
-}
+{
 printf("%d ", n);
+}
 }
 }
