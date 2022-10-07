@@ -33,13 +33,13 @@ _putchar(z + '0');
 if (y != n)
 {
 _putchar(',');
-if (z / 10 == 0)
+if (z < 10)
 {
 _putchar(' ');
 _putchar(' ');
 _putchar(' ');
 }
-else if (z / 100 == 0)
+else if (z > 9 && z < 100)
 {
 _putchar(' ');
 _putchar(' ');
