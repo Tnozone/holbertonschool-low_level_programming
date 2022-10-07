@@ -1,7 +1,6 @@
 #include<stdio.h>
 /**
  * main - Entry point
- * @n: integer
  * description - prints 1 - 100, and buzzes on multiples
  * Return: Always 0 (Success)
  */
@@ -9,20 +8,20 @@
 int main(void)
 {
 int n;
-  
-for (n = 0; n <= 100; n++)
+
+for (n = 1; n <= 100; n++)
 {
-if (n % 3 == 0)
+if ((n % 3 == 0) && (n % 5 == 0))
 {
-printf("Fizz ");
+printf("FizzBuzz ");
 }
 else if (n % 5 == 0)
 {
 printf("Buzz ");
 }
-else if ((n % 3 == 0) && (n % 5 == 0))
+else if (n % 3 == 0)
 {
-printf("FizzBuzz ");
+printf("Fizz ");
 }
 else
 {
