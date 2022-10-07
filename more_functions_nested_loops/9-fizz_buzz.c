@@ -1,15 +1,15 @@
 #include<stdio.h>
-#include"main.h"
 /**
- * buzz - Entry point
+ * main - Entry point
  * @n: integer
  * description - prints 1 - 100, and buzzes on multiples
  * Return: Always 0 (Success)
  */
 
-void buzz(int n)
+int main(void)
 {
-
+int n;
+  
 for (n = 0; n <= 100; n++)
 {
 if (n % 3 == 0)
@@ -29,4 +29,5 @@ else
 printf("%d ", n);
 }
 }
+return (0);
 }
