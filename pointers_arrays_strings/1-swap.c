@@ -1,6 +1,6 @@
 #include"main.h"
 /**
- * reset_to_98 - Entry point
+ * swap_int - Entry point
  * description - make a pointer point to 98
  * @a: pointer 1
  * @b: pointer 2
