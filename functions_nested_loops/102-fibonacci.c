@@ -11,7 +11,7 @@ int i;
 long t1 = 1, t2 = 2;
 long next = t1 + t2;
 
-printf("%d, %d, ", t1, t2);
+printf("%ld, %ld, ", t1, t2);
 for(i = 3; 1 <= 50; ++i)
 {
 printf("%ld, ", next);
