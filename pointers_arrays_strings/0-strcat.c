@@ -15,8 +15,7 @@ while (src[len] != '\0')
 {
 len++;
 }
-len--;
-x = (len * 2) + 1;
+x = (len * 2) - 1;
   
 while (len <= x)
 {
