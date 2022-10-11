@@ -9,18 +9,18 @@
 
 int _strcmp(char *s1, char *s2)
 {
-int y, z = 0, len = 0;
+int x = 0;
 
-while (s1[len] != '\0')
+while (s1[x] = s2[x] && s1[x] != '\0')
 {
-len++;
+x++;
 }
-
-while (s2[z] != '\0')
+if (s1[x] != s2[x])
 {
-z++;
+return (s1[x] - s2[x])
 }
-
-y = z - len;
-return (y);
+else
+{
+return (0)
+}
 }
