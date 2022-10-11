@@ -20,7 +20,7 @@ break;
 }
 s1++;
 s2++;
-} 
+}
 
 if (x == 0)
 {
@@ -28,6 +28,6 @@ return (0);
 }
 else
 {
-return (s1 - s2);
+return (s2 - s1);
 }
 }
