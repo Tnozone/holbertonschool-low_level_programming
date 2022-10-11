@@ -15,10 +15,10 @@ while (str[len] != '\0')
 len++;
 }
 
-for (i=0; i < len; i++)
+for (i = 0; i < len; i++)
 {
 _putchar(str[i]);
-str += 1;
+i += 1;
 }
 _putchar('\n');
 }
