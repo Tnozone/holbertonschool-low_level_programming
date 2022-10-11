@@ -1,6 +1,6 @@
 #include"main.h"
 /**
- * *_strncmp - Entry point
+ * _strncmp - Entry point
  * description - compares two strings
  * @s1: string 1
  * @s2: string 2
@@ -21,6 +21,6 @@ while (s2[z] != '\0')
 z++;
 }
 
-y = len - z;
+y = z - len;
 return (y);
 }
