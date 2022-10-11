@@ -20,4 +20,5 @@ while (x <= len)
 dest[x] = src[x];
 x++;
 }
+ return (0);
 }
