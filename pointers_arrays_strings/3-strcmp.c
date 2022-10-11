@@ -4,7 +4,7 @@
  * description - compares two strings
  * @s1: string 1
  * @s2: string 2
- * Return: y
+ * Return: Sucess
  */
 
 int _strcmp(char *s1, char *s2)
@@ -17,10 +17,10 @@ x++;
 }
 if (s1[x] != s2[x])
 {
-return (s1[x] - s2[x])
+return (s1[x] - s2[x]);
 }
 else
 {
-return (0)
+return (0);
 }
 }
