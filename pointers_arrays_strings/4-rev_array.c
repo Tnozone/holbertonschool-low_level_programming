@@ -16,7 +16,7 @@ while (a[i] != '\0')
 i++;
 }
 i--;
-
+ 
 while (y < n)
 {
 x = a[i];
