@@ -8,10 +8,11 @@
 
 char *leet(char *st)
 {
+char *r = st;
 int i = 0;
 char a[] = {'a', 'e', 'o', 't', 'l'};
 char n[] = {'4', '3', '0', '7', '1'};
- 
+
 while (*st)
 {
 for (i = 0; i < 5; i++)
@@ -23,5 +24,5 @@ if (*st == a[i] || *st == a[i] - 32)
 }
 st++;
 }
-return (st);
+return (r);
 }
