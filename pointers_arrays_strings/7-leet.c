@@ -21,7 +21,7 @@ if (*st == a[i] || *st == a[i] - 32)
 *st = n[i] + 0;
 }
 }
-s++;
+st++;
 }
 return (st);
 }
