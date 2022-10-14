@@ -13,17 +13,17 @@ unsigned int c, match, l = 0;
 
 while (*s)
 {
-for (l = 0, accept[l]; l++)
+for (l = 0; accept[l]; l++)
 {
 If (*s == accept[l])
 {
 c++;
-match = 1
+match = 1;
 }
 }
 if (!match)
 {
-return (c)
+return (c);
 }
 match = 0;
 s++;
