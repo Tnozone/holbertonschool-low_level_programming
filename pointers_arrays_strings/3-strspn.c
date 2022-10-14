@@ -9,24 +9,24 @@
 
 unsigned int _strspn(char *s, char *accept)
 {
-unsigned int x, y, l = 0;
+unsigned int c, match, l = 0;
 
-for (x = 0; s[x] != '\0'; x++)
+while (*s)
 {
-if (s[x] == ' ')
+for (l = 0, accept[l]; l++)
 {
-for (y = 0; accept[y] != '\0'; y++)
+If (*s == accept[l])
 {
-if (s[x] == accept[y])
-{
-l++;
+c++;
+match = 1
 }
 }
-}
-else
+if (!match)
 {
-return (l);
+return (c)
 }
-}
-return (l);
+match = 0;
+s++;
+} 
+return (c);
 }
