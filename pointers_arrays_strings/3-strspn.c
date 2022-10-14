@@ -15,7 +15,7 @@ while (*s)
 {
 for (l = 0; accept[l]; l++)
 {
-If (*s == accept[l])
+if (*s == accept[l])
 {
 c++;
 match = 1;
