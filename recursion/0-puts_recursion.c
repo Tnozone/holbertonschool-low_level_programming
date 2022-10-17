@@ -15,5 +15,5 @@ s = s + 1;
 int main(void)
 {
 _puts_recursion(*s);
-return(0);
+return(s);
 }
