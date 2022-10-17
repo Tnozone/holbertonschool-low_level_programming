@@ -1,0 +1,24 @@
+#include"main.h"
+/**
+ * print_chessboard - Entry point
+ * description - prints chessboard
+ * @a: chessboard
+ * Return: NULL
+ */
+
+void print_chessboard(char (*a)[8])
+{
+  char whites[8] = {'r', 'k', 'b', 'q', 'k', 'b', 'k', 'r'};
+  char blacks[8] = {'R', 'K', 'B', 'Q', 'K', 'B', 'K', 'R'};
+
+  while (*a)
+    {
+           _putchar(*a);
+           if (a[][8])
+	{
+	  _putchar('\n')
+	}
+	
+    }
+  
+}

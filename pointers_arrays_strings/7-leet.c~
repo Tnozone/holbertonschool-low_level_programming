@@ -1,0 +1,45 @@
+#include"main.h"
+/**
+ * *leet - Entry point
+ * description - translates string into 1337-speak
+ * @st: pointer to string
+ * Return: string
+ */
+
+char *leet(char *st)
+{
+  int i = 0;
+
+  while (st[i] != '\0')
+    {
+      if (st[i] == 'a' || st[i] == 'A')
+	{
+	}
+      int i = 0;                                                                                                                      
+                                                                                                                                
+      if (st[0] >= 'a' && st[0] <= 'z')                                                                                               
+	{                                                                                                                               
+	  st[0] -= 32;                                                                                                                    
+	}                                                                                                                               
+      while (st[i] != '\0')                                                                                                           
+	{                                                                                                                               
+	  if (st[i] == ',' || st[i] == '.' ||                                                                                             
+	      st[i] == ' ' || st[i] == ';' ||                                                                                                 
+st[i] == '\n' || st[i] == '!' ||                                                                                                
+st[i] == '?' || st[i] == '"' ||                                                                                                 
+	      st[i] == '(' || st[i] == ')' ||                                                                                                 
+	      st[i] == '{' || st[i] == '}'||                                                                                                  
+	      st[i] == '\t')                                                                                                                  
+	    {                                                                                                                               
+	      if (st[i + 1] >= 'a' && st[i + 1] <= 'z')                                                                                       
+		{                                                                                                                               
+		  st[i + 1] -= 32;                                                                                                                
+		}                                                                                                                               
+	    }                                                                                                                               
+	  i++;                                                                                                                            
+	}  
+      i++;
+    }
+  
+  return (st);
+}
