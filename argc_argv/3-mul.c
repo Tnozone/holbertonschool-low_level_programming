@@ -10,15 +10,15 @@ int main(int argc, char *argv[])
 {
   int m, n, prod;
 
-if (argc < 2)
+if (argc != 2)
 {
 printf("Error\n");
 return (1);
 }
 else
 {
-m = argv[1];
-n = argv[2];
+m = atoi(argv[1]);
+n = atoi(argv[2]);
 prod = m * n;
 printf("%d\n", prod);
 }
