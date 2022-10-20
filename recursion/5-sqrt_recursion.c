@@ -1,13 +1,12 @@
-#include"main.h"
+#include "main.h"
 /**
- * _sqrt_recursion - Entry point
- * description - returns square root
- * @n: integer
- * @i: square number
- * Return: Sucess
+ * fd - Entry
+ * @i: number to square
+ * @n: root
+ * Return: (fd)
  */
 
-int root(int n, int i)
+int fd(int i, int n)
 {
 if (i * i == n)
 {
@@ -17,15 +16,20 @@ if (i * i > n)
 {
 return (-1);
 }
-return (root(i + 1, n));
+return (fd(i + 1, n));
 }
+
+/**
+ * _sqrt_recursion - Write a function that returns the natural square root
+ * @n: root
+ * Return: (fd)
+ */
 
 int _sqrt_recursion(int n)
 {
-  
 if (n == 0)
 {
 return (0);
 }
-return (root(1, n));
+return (fd(1, n));
 }
