@@ -8,16 +8,18 @@
 
 int main(int argc, char *argv[])
 {
-int prod = 0;
+  int m, n, prod;
 
 if (argc < 2)
 {
-prinf("Error\n");
+printf("Error\n");
 return (1);
 }
 else
 {
-prod = argv[1] * argv[2];
+m = argv[1];
+n = argv[2];
+prod = m * n;
 printf("%d\n", prod);
 }
 return (0);
