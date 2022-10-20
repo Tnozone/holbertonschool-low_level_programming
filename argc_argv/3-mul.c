@@ -9,7 +9,7 @@
 
 int main(int argc, char *argv[])
 {
-  int m, n, prod;
+int m, n, prod;
 
 if (argc != 3)
 {
@@ -20,7 +20,7 @@ else
 {
 m = atoi(argv[1]);
 n = atoi(argv[2]);
-prod = m * n;
+prod = m *n;
 printf("%d\n", prod);
 }
 return (0);
