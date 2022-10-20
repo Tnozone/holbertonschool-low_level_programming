@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 /**
  * main - program that multiplies two arguments
  * @argc: int of argument
@@ -10,7 +11,7 @@ int main(int argc, char *argv[])
 {
   int m, n, prod;
 
-if (argc != 2)
+if (argc != 3)
 {
 printf("Error\n");
 return (1);
