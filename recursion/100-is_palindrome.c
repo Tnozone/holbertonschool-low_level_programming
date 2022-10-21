@@ -1,21 +1,45 @@
 #include"main.h"
 /**
  * len - Entry point
- * description - returns length of string
- * @s: string
+ * description - palindrome check
+ * @str: character to check with end
+ * @end: character to check with start
  * Return: Sucess
  */
 
-int len(char *s)
+int len(char *str, char *end)
 {
 
-  if (*s == '\0')
+  if (str == end)
     {
-      return (0);
+      return (1);
     }
-  return (1 + len(s + 1));
-}
+  if (*str == *end && str + 1 == end)
+    {
+      return (1);
+    }
+  if (*str == *end)
+    {
+      return (len(str + 1, end - 1));
+    }
+  return (0);
+    }
 
+/**
+ * end - return a pointer at the end of a string
+ * @s: string
+ * Return: pointer to end of string
+ */
+
+char *end(char *s)
+{
+  if (*s)
+    {
+    return (end(s + 1));
+    }
+  return (s);
+}
+  
 /**
  * is_palindrome - Entry point
  * description - checks if string is a palindrome
@@ -25,22 +49,5 @@ int len(char *s)
 
 int is_palindrome(char *s)
 {
-  
-  if (len == 0)
-    {
-      return (1);
-    }
-  else if (*s < len / 2)
-    {
-      if (*s == s[len - 1])
-	{
-	  s++;
-	  len--;
-	}
-      else
-	{
-	  return (0);
-	}
-      return (1);
-    }
+  return (len(s, end(s) - 1));
 }
