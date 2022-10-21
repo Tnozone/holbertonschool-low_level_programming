@@ -6,7 +6,7 @@
  * Return: Sucess
  */
 
-int len(*s)
+int len(char *s)
 {
 
   if (*s == '\0')
