@@ -47,6 +47,14 @@ if (ar == NULL)
     }
  else
    {
-     return (ar); 
+     for (i = 0; i < x; i++)
+       {
+	 ar[i] = s1[i];
+       }
+     for (j = 0; j <= y; j++)
+       {
+	 ar[i + j] = s2[j];
+       }
    }
+ return (ar);
 }
