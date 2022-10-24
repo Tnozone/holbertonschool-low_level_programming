@@ -13,17 +13,22 @@
 char *create_array(unsigned int size, char c)
 {
 char *var
-  var = malloc(sizeof(int) + sizeof(char));
-  var[0] = size;
-  var[1] = c;
-  
-  if (size == 0)
+  var = malloc((sizeof(c) * size) + 1);
+ int i;
+ 
+ for (i = 0; i < size; i++)
+   {
+   if (size == 0)
     {
       return (NULL);
     }
-  while (1)
+  else if (var == NULL)
     {
-      return (var);
+      return (NULL);
     }
-  return (NULL);
+  else
+    {
+  return (var);
+    }
+   }
 }
