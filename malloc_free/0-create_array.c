@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 /**
- * simple_print_buffer - creates an array of chars
+ * *create_array - creates an array of chars
  * @c: specified char
  * @size: the size of the memory to print
  *
