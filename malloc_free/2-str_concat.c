@@ -23,7 +23,7 @@ char *str_concat(char *s1, char *s2)
     {
   for(x = 0; s1[x] != '\0'; x++)
     {
-      x++;
+      ;
     }
     }
   if (s2 == NULL)
@@ -34,7 +34,7 @@ char *str_concat(char *s1, char *s2)
     {
   for(y = 0; s2[y] != '\0'; y++)
     {
-      y++;
+      ;
     }
     }
 
