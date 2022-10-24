@@ -12,34 +12,34 @@
 
 char *str_concat(char *s1, char *s2)
 {
-  int x, y, i, j;
+  int x, y, i, s;
   char *ar;
 
+  if (s1 == NULL)
+    {
+      x = 0
+    }
+  else
+    {
   for(x = 0; s1[x] != '\0'; x++)
     {
-      if (s1 == NULL)
-	{
-	  x = 0;
-	  break;
-	}
-      else
-	{
       x++;
-	}
     }
+    }
+  if (s2 == NULL)
+    {
+      y = 0;
+    }
+  else
+    {
   for(y = 0; s2[y] != '\0'; y++)
     {
-      if (s2 == NULL)
-	{
-	  y = 0;
-	  break;
-	}
-      else
-	{
       y++;
-	}
     }
-ar = malloc(sizeof(char) * (x + y) +1);
+    }
+
+s = x + y + 1  
+  ar = malloc(sizeof(char) * s);
 
 if (ar == NULL)
     {
@@ -51,10 +51,11 @@ if (ar == NULL)
        {
 	 ar[i] = s1[i];
        }
-     for (j = 0; j <= y; j++)
+     for (i = 0; i <= y; i++)
        {
-	 ar[i + j] = s2[j];
+	 ar[i + x] = s2[i];
        }
+     ar[x + y] = '\0';
    }
  return (ar);
 }
