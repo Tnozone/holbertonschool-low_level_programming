@@ -13,7 +13,7 @@ char *_strdup(char *str)
 {
   char *array;
   int i, x;
-  
+
   if (str == NULL)
     {
       return (NULL);
@@ -28,7 +28,7 @@ char *_strdup(char *str)
     {
       return (NULL);
     }
-  for (x = 0; x < i, x++)
+  for (x = 0; x < i; x++)
     {
       array[x] = str[x];
     }
