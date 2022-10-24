@@ -17,7 +17,7 @@ char *str_concat(char *s1, char *s2)
 
   if (s1 == NULL)
     {
-      x = 0
+      x = 0;
     }
   else
     {
@@ -38,7 +38,7 @@ char *str_concat(char *s1, char *s2)
     }
     }
 
-s = x + y + 1  
+  s = x + y + 1;  
   ar = malloc(sizeof(char) * s);
 
 if (ar == NULL)
