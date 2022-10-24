@@ -13,8 +13,9 @@
 char *create_array(unsigned int size, char c)
 {
   char *var;
+  unsigned int i;
+  
   var = malloc((sizeof(c) * size) + 1);
-unsigned int i;
  
    if (size == 0)
     {
