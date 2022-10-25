@@ -19,7 +19,7 @@ if (s1 == NULL)
 {
 s1 = "";
 }
-for(x = 0; s1[x] != '\0'; x++)
+for (x = 0; s1[x] != '\0'; x++)
 {
 ;
 }
@@ -27,12 +27,12 @@ if (s2 == NULL)
 {
 s2 = "";
 }
-for(y = 0; s2[y] != '\0'; y++)
+for (y = 0; s2[y] != '\0'; y++)
 {
 ;
 }
 
-s = x + y + 1;  
+s = x + y + 1;
 ar = malloc(sizeof(char) * s);
 
 if (ar == NULL)
