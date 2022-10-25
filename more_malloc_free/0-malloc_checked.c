@@ -6,12 +6,12 @@
  * *malloc_checked - allocates memory
  * @b: unsigned int
  *
- * Return: Nothing.
+ * Return: 0 or 98
  */
 
 void *malloc_checked(unsigned int b)
 {
-  int *var;
+  void *var;
   var = malloc(sizeof(b));
 
   if (var != NULL)
