@@ -14,9 +14,8 @@
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-unsigned x, y, i, s;
+unsigned int x, y, i, s;
 char *ar;
-
 if (s1 == NULL)
 {
 s1 = "";
@@ -37,10 +36,8 @@ if (n > y)
 {
 n = y;
 }
-
 s = x + n + 1;
 ar = malloc(sizeof(char) * s);
-
 if (ar == NULL)
 {
 return (NULL);
