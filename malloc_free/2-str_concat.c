@@ -17,25 +17,19 @@ char *str_concat(char *s1, char *s2)
 
   if (s1 == NULL)
     {
-      x = 0;
+      s1 = "";
     }
-  else
-    {
   for(x = 0; s1[x] != '\0'; x++)
     {
       ;
     }
-    }
   if (s2 == NULL)
     {
-      y = 0;
+      s2 = "";
     }
-  else
-    {
   for(y = 0; s2[y] != '\0'; y++)
     {
       ;
-    }
     }
 
   s = x + y + 1;  
