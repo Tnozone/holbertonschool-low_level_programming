@@ -3,11 +3,11 @@
 #include <stdlib.h>
 
 /**
- * **alloc_grid - returns a pointer to two-deimentional array
- * @width: integer
- * @height: integer
+ * *_calloc - returns a pointer to two-deimentional array
+ * @nmemb: number of elements
+ * @size: size of elements
  *
- * Return: Nothing.
+ * Return: ar or null
  */
 
 void *_calloc(unsigned int nmemb, unsigned int size)
