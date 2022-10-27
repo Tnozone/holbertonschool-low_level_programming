@@ -2,7 +2,7 @@
 
 /**
  * main - print name of file
- * 
+ *
  * Return: 0
  */
 
