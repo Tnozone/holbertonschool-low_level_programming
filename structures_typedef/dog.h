@@ -1,6 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+#ifndef _DOG_H_
+#define _DOG_H_
+#endif
+
 /**
  * struct dog - structure dog
  * @name: first member
