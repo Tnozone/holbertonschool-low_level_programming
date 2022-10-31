@@ -32,7 +32,7 @@ char *_strcpy(char *s)
  * Return: Always 0.
  */
 
-dog_t *new_dog(char *name, float age, char *owner);
+dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *p;
 
