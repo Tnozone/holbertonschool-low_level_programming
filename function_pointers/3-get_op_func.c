@@ -2,9 +2,9 @@
 
 /**
  * get_op_func - function to get operator
- * @get_op_func: function pointer
+ *
  * @s: The operator
- * Return:
+ * Return: NULL or ops[i].f
  */
 
 int (*get_op_func(char *s))(int, int)
