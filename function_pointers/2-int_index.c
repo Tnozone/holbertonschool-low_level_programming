@@ -4,6 +4,7 @@
  * @array: array to search
  * @size: array size
  * @cmp: function pointer
+ * Return: i or (-1)
  */
 
 int int_index(int *array, int size, int (*cmp)(int))
@@ -15,8 +16,7 @@ int int_index(int *array, int size, int (*cmp)(int))
 
 	for (i = 0; i < size; i++)
 	{
-		cmp(array[i]);
-		if (cmp != 0)
+		if (cmp(array[i]))
 			return (i);
 	}
 	return (-1);
