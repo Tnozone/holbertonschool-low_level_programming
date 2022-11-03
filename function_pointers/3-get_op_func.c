@@ -1,10 +1,10 @@
 #include"3-calc.h"
 
 /**
- * - entry
- * @gat_op_func: function pointer
+ * 
+ * @get_op_func: function pointer
  * @s: The operator
- * Return: 
+ * Return:
  */
 
 int (*get_op_func(char *s))(int, int)
@@ -23,7 +23,7 @@ int (*get_op_func(char *s))(int, int)
 	{
 		if (*ops[i].op == *s)
 			return (ops[i].f);
-		i++;	
+		i++;
 	}
 
 	return (NULL);
