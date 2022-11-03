@@ -19,9 +19,9 @@ int (*get_op_func(char *s))(int, int)
 		};
 	int i;
 
-	if (s != '+' && s != '-' && s != '*' &&
-	s != '/' && s != '%')
-		return (NULL);
+	while (ops[i].op != NULL)
+		if (ops[i].op == s)
+			return (ops[i].f);
 
-
+	return (NULL);
 }
