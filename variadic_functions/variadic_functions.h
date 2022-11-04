@@ -11,7 +11,7 @@
  * longer description
  */
 
-typedef struct printer
+typedef struct prin
 {
 	char *p;
 	void (*f)(va_list arg);
