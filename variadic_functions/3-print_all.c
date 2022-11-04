@@ -70,7 +70,7 @@ void print_all(const char * const format, ...)
 	va_list arg;
 	int x = 0;
 	int y = 0;
-	char *var;
+	char *var = "";
 
 	va_start(arg, format);
 
