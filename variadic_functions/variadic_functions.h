@@ -2,23 +2,20 @@
 #define _VARIADIC_FUNCTIONS_H_
 #include<stdio.h>
 #include<stdlib.h>
+#include<stdarg.h>
 
 /**
- * struct unit - structure format
- * @c: char
- * @i: int
- * @f: float
- * @s: string
+ * struct printer - structure format
+ * @p: read value
+ * @f: function pointer
  * longer description
  */
 
-typedef struct unit
+typedef struct printer
 {
-	char c;
-	int i;
-	float f;
-	char *s;
-} unit;
+	char *p;
+	void (*f)(va_list arg);
+} printer;
 
 int _putchar(char);
 int sum_them_all(const unsigned int n, ...);
