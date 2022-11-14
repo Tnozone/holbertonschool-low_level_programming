@@ -9,11 +9,11 @@
 size_t print_list(const list_t *h)
 {
 	int x = 0;
-	list_t *current = h;
+	list_t *current = *h;
 	while(current != NULL)
 	{
 		if (current->str == NULL)
-			str = "[0] (nil)";
+			current->str = "[0] (nil)";
 		printf("%s", current->str);
 		x++;
 		current = current->next;
