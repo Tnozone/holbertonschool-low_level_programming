@@ -9,5 +9,9 @@
 
 void free_list(list_t *head)
 {
-	free(list_t);
+	while (head != NULL)
+	{
+		free(head);
+		head = head->next;
+	}
 }
