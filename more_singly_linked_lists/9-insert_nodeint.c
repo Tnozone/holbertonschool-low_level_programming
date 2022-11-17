@@ -2,7 +2,7 @@
 
 /**
  * insert_nodeint_at_index - inserts a new node at the index
- * @h: head node
+ * @head: head node
  * @idx: place to insert node
  * @n: data
  * Return: adress of new node or NULL
