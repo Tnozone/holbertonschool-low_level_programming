@@ -1,0 +1,24 @@
+#include "lists.h"
+
+/**
+ * get_nodeint_at_index - returns nth node
+ * @head: head node
+ * @index: node to return
+ * Return: address of index node
+ */
+
+listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
+{
+	int i = 0;
+
+	while (i < index)
+	{
+		head = head->next;
+		i++;
+	}
+
+	if (head == NULL)
+		return (NULL);
+	else
+		return (head)
+}
