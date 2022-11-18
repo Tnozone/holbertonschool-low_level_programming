@@ -21,7 +21,7 @@ unsigned int binary_to_uint(const char *b)
 
 	for (; x >= 0; x--)
 	{
-		if (b[x] != 0 && b[x] != 1)
+		if (b[x] != '0' && b[x] != '1')
 			return (0);
 
 		y += (b[x] - '0') * mul;
