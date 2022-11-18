@@ -8,13 +8,13 @@
 
 unsigned int _pow(unsigned int a)
 {
-	if (y == 0)
+	if (a == 0)
 	{
 		return (1);
 	}
 	else
 	{
-		return (2 * _pow(2, y - 1));
+		return (2 * _pow(2, a - 1));
 	}
 }
 
@@ -34,7 +34,7 @@ unsigned int binary_to_uint(const char *b)
 	while (*b)
 		x++;
 
-	for (z = x; z >= 0; z--)
+	for (z = x; z > 0; z--)
 	{
 		if (b[z] != 1 || b[z] != 0)
 			break;
