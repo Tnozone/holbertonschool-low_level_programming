@@ -6,7 +6,7 @@
  * Return: power number
  */
 
-int _pow(int y)
+unsigned int _pow(unsigned int a)
 {
 	if (y == 0)
 	{
@@ -26,7 +26,7 @@ int _pow(int y)
 
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int a = 0, y = 0, x = 0;
+	unsigned int z, a = 0, y = 0, x = 0;
 
 	if (b == NULL)
 		return (0);
@@ -34,12 +34,13 @@ unsigned int binary_to_uint(const char *b)
 	while (*b)
 		x++;
 
-	for (x; x >= 0; x--)
+	for (z = x; z >= 0; z--)
 	{
-		if (b[x] != 1 || b[x] != 0)
+		if (b[z] != 1 || b[z] != 0)
+			break;
 			return (0);
 
-		if (b[x] == 1)
+		if (b[z] == 1)
 		{
 			y += _pow(a);
 		}
