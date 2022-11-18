@@ -1,19 +1,14 @@
 #include "main.h"
 
 /**
- * pow - power function
+ * _pow - power function
  * @y: number for power of 2.
  * Return: power number
  */
 
-int pow(int y)
+int _pow(int y)
 {
-
-	if (y < 0)
-	{
-		return (-1);
-	}
-	else if (y == 0)
+	if (y == 0)
 	{
 		return (1);
 	}
@@ -39,14 +34,14 @@ unsigned int binary_to_uint(const char *b)
 	while (*b)
 		x++;
 
-	for (x; x >= 0, x--)
+	for (; x >= 0, x--)
 	{
 		if (b[x] != 1 || b[x] != 0)
 			return (0);
 
 		if (b[x] == 1)
 		{
-			y += pow(a);
+			y += _pow(a);
 		}
 		a++;
 	}
