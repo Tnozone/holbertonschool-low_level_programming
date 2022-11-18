@@ -9,7 +9,7 @@
 unsigned int binary_to_uint(const char *b)
 {
 	int x;
-	unsigned y = 0;
+	unsigned int y = 0;
 	unsigned int mul = 1;
 
 	if (b == NULL)
@@ -24,11 +24,8 @@ unsigned int binary_to_uint(const char *b)
 		if (b[x] != 0 && b[x] != 1)
 			return (0);
 
-		if (b[x] == 1)
-		{
-			y += (1 - '0') * mul;
-			mul *= 2;
-		}
+		y += (b[x] - '0') * mul;
+		mul *= 2;
 	}
 	return (y);
 }
