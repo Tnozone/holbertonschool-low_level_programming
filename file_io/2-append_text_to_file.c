@@ -16,12 +16,12 @@ int append_text_to_file(const char *filename, char *text_content)
 
 	if (text_content != NULL)
 	{
-		for (x = 0; text_content[x] != '\0'; x++
+		for (x = 0; text_content[x] != '\0'; x++)
 				;
 	}
 
-	op = open(filename, O_WRONLY | O_APPEND)
-	wr = write(op, text_content, x)
+	op = open(filename, O_WRONLY | O_APPEND);
+	wr = write(op, text_content, x);
 
 	if (op == -1 || wr == -1)
 	return (-1);
