@@ -1,44 +1,61 @@
 #include "main.h"
 
 /**
- * - copies content of one file to another
- * @file_from: file to copy
- * @file_to: file to copy to
- * Return:
+ * main - entry point
+ * @argc: argument count
+ * @argv: file to copy to
+ * Return: ...
  */
 
-int cp(int argc, char *argv[])
+int main(int argc, char **argv)
 {
-	int op1, op2, rd, wr, x;
-
 	if (argc != 3)
 	{
-		fprintf("Usage: cp file_from file_to\n");
+		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
 		exit(97);
 	}
+	copy_file(argv[1], argv[2]);
+	exit(0);
+}
 
-	if (file_from == NULL)
+void copy_file(const char *file_from, const char *file_to)
+{
+	int op1, op2, rd;
+	char buff[1024];
+
+	op1 = open(file_from, O_RDONLY);
+	if (!file_from || op1 == -1)
 	{
-		fprintf("Error: Can't read from file %s\n", argv[1]);
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", file_from);
 		exit(98);
 	}
 
-	op1 = open(argv[1], O_RDONLY);
+	op2 = open(file_to, O_CREAT | O_WRONLY | O_TRUNC, 0664);
 
-	rd = read(op1, );
-
-	close(op1);
-
-	op2 = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
-
-	wr = write(op2, ,rd);
-
-	if (wr == -1 | op2 == -1)
+	while ((rd = read(op1, buff, 1024)) > 0)
 	{
-		fprintf("Error: Can't write to %s\n", argv[2]);
-		exit(99);
+		if (write(op2, buff, rd) != rd || op2 == -1)
+		{
+			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", file_to);
+			exit(99);
+		}
 	}
 
-	close(op2);
+	if (rd == -1)
+	{
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", file_from);
+		exit(98);
+	}
 
+	if (close(op1) == -1)
+	{
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", op1);
+		exit(100);
+	}
+
+	if (close(op2) == -1)
+	{
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", op2);
+		exit(100);
+	}
 }
