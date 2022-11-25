@@ -18,6 +18,13 @@ int main(int argc, char **argv)
 	exit(0);
 }
 
+/**
+ * copy_file - copies content of one file into another
+ * @file_from: source file
+ * @file_to: destination file
+ * Return: ...
+ */
+
 void copy_file(const char *file_from, const char *file_to)
 {
 	int op1, op2, rd;
