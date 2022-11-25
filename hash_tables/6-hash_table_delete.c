@@ -6,7 +6,7 @@
  * Return: 0
  */
 
-void hash_table_delete(hash_table_t *ht);
+void hash_table_delete(hash_table_t *ht)
 {
 	hash_node_t *node;
 	hash_node_t *tmp;
