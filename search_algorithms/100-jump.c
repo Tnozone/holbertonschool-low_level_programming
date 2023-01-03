@@ -10,9 +10,9 @@
 int min(int a, int b)
 {
 	if (b > a)
-		return a;
+		return (a);
 	else
-		return b;
+		return (b);
 }
 
 /**
@@ -34,6 +34,7 @@ int jump_search(int *array, size_t size, int value)
 
 	while (array[min(step, s) - 1] < value)
 	{
+		printf("Value checked array[%d] = [%d]\n", prev, array[prev]);
 		prev = step;
 		step += sqrt(s);
 		if (prev >= s)
